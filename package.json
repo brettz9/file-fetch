@@ -4,7 +4,8 @@
   "description": "fetch for read and write access to the local file system",
   "main": "index.js",
   "scripts": {
-    "test": "standard && mocha"
+    "lint": "eslint .",
+    "test": "npm run lint && mocha"
   },
   "repository": {
     "type": "git",
@@ -33,7 +34,12 @@
     "readable-error": "^1.0.0"
   },
   "devDependencies": {
-    "mocha": "^6.2.2",
-    "standard": "^14.3.1"
+    "eslint": "^6.6.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "mocha": "^6.2.2"
   }
 }
